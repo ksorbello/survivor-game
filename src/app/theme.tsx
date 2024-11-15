@@ -2,10 +2,10 @@
 import { Roboto } from 'next/font/google'
 import { createTheme } from '@mui/material/styles'
 
-// import '@fontsource/roboto/300.css';
-// import '@fontsource/roboto/400.css';
-// import '@fontsource/roboto/500.css';
-// import '@fontsource/roboto/700.css';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
 const roboto = Roboto({
     weight: ['300','400', '500', '700'],
@@ -15,8 +15,7 @@ const roboto = Roboto({
 
 declare module '@mui/material/styles' {
     interface Components {
-        MainMenuFrameComponent: {},
-        GameButtonComponent: {}
+        LoginFrame:{}
     }
 }
 
@@ -43,9 +42,15 @@ const theme = createTheme({
     },
     action:{
       hover:'#640300'
-    }
+    }, 
   },
-
+components:{
+  LoginFrame:{
+    styleOverrides:{
+      root: {width: '250px', height:'200px', borderStyle:'ridge solid', borderRadius: '20px'  }
+    }
+  }
+}
       
  
 
