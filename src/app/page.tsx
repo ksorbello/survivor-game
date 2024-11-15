@@ -2,7 +2,8 @@
 'use client'
 import * as React from 'react';
 import { Container } from "@mui/material";
-import Navigation from './components/nav';
+import Navigation from './components/Nav';
+
 
 
 
