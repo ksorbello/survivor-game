@@ -18,6 +18,7 @@ export const PageContainer = styled(Box)(({theme}) => ({
   export const StyledTabs = styled(Tabs)(({ theme }) => ({
     width: '100%',
     height:'100%',
+    marginBottom:'40px',
     color: theme.palette.primary.contrastText,
     "&hover":{backgroundColor: theme.palette.action.hover}
   }));

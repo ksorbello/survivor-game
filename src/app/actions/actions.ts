@@ -1,8 +1,12 @@
 "use server";
 
-import { signIn } from "../../../auth";
+import { signIn, signOut } from "../../../auth";
 
-export const userSignIn = async (provider) => {
-  console.log("in signin");
-  await signIn(provider);
+export const userLogin = async (formData) => {
+  const action = formData.get("action");
+  await signIn(action, { redirectTo: "/home" });
+};
+
+export const userLogout = async () => {
+  await signOut({ redirectTo: "/" });
 };
