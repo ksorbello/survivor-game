@@ -5,7 +5,7 @@ import { Button } from '@mui/material'
 function Logout() {
   return (
     <form action={userLogout}>
-        <Button type='submit'>
+        <Button variant='contained' type='submit' sx={{margin:'.5rem'}}>
             Logout
         </Button>
     </form>

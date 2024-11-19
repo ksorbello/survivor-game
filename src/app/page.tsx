@@ -26,7 +26,7 @@ export default  function Home() {
   // need to sort out this client server compoenent shit 
 
   return (
-  <Container  sx={{display:'flex', alignItems:'center', justifyItems:'center'}}>
+  <Container >
     <Navigation handleChange={handleChange} value={value}/>
     <Box sx={{height:'50vh', maxHeight:'400px'}}>
       <Image
